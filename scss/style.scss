@@ -199,6 +199,13 @@ body{
                     background: transparent;
                 }
 
+                input:focus ~ label, input:valid ~ label{
+                    top: -20px;
+                    left: 0;
+                    color: #f68e44;
+                    font-size: 12px;
+                }
+
                 label {
                     position: absolute;
                     top:0;
@@ -210,11 +217,27 @@ body{
                     transition: 0.5s;
                 }
 
-                input:focus ~ label, input:valid ~ label{
-                    top: -20px;
-                    left: 0;
-                    color: #f68e44;
-                    font-size: 12px;
+                .fa-eye{
+                    display: none;
+                    color: #111;
+                    padding: 4px 8px;
+                    font-size: 14px;
+                    position: absolute;
+                    right: 16px;
+                    bottom: 32px;
+                    cursor: pointer;
+                    transition: 0.6s all ease-in-out; 
+                }
+        
+                .fa-eye-slash{
+                    color: #FFF;
+                    padding: 4px 8px;
+                    font-size: 14px;
+                    position: absolute;
+                    right: 16px;
+                    bottom: 32px;
+                    cursor: pointer;
+                    transition: 0.6s all ease-in-out;
                 }
             }
 
