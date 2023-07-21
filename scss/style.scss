@@ -16,6 +16,8 @@ body{
     font-size: 16px;
     color: #000;
     box-sizing: border-box;
+    height: 100vh;
+    position: relative;
 
     a{
         text-decoration: none;
@@ -98,12 +100,14 @@ body{
     }
 
     .tikpro2{
-        width: 92%;
+        width: 88%;
         margin: auto;
-        padding: 100px 0;
-        height: 80vh;
+        margin-top: 18vh;
+        // height: 56vh;
         display: flex;
         justify-content: center;
+        align-items: center;
+        
 
         .login-box{
             display: flex;
@@ -112,7 +116,7 @@ body{
             justify-content: center;
             box-sizing: border-box;
             width: 400px;
-            height: 80%;
+            height: 380px;
             background: rgba(0,0,0,.5);
             box-shadow: 0 15px 25px rgba(0,0,0,.6);
             border-radius: 10px;
@@ -296,6 +300,9 @@ body{
     }
 
     footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -331,9 +338,10 @@ body{
         }
 
         .tikpro2{
-            .login-box{
-                height: 100%;
-            }
+        margin-top: 8vh;
+            // .login-box{
+            //     height: 100%;
+            // }
         }
 
         footer{
